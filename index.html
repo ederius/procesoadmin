@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Inicio de Sesión</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link href="view/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="view/css/loginStyles.css"  rel="stylesheet" type="text/css">
+    <link href="view/css/style_panel.css"  rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+        <div  ng-view >
+            <div class="container">
+<div class="row valign-wrapper altura ">
+    <div class="col valign  s5 m5 l5 ">
+
+        <div class="card ">
+
+            <div class="card-content">
+                <img src="view/imagenes/logo.gif" width="160" height="90" alt="Escudo" class="center-block center-align">
+                <br></br>
+
+                        <div class="row">
+
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">person_pin</i>
+                                <input id="usuario" name="usuario" type="text" class="validate" >
+                                <label for="usuario">Usuario</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">https</i>
+                                <input id="contra" name="contra" type="password" class="validate ">
+                                 <label for="contra" >Contraseña</label>
+                            </div>
+                        </div>
+
+                <div id="error" class=" waves-light center-align"></div>
+             </div>
+            <a  class="waves-effect waves-light btn right white-text siguiente light-green accent-4" id="siguiente"> Inicio de sesión</a>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+    <div class=" center-align center">
+        <a href="#" class="center center-align green-text-accent-1">Centro de enseñanza y estimulación happy kids </br> Riohacha - la Guajira</spam></br> 2016 </br> © </a>
+
+    </div>
+</div>
+
+
+
+
+        </div>
+</body>
+
+    <script src="view/js/jquery-1.8.2.min.js"></script>
+    <script src="view/js/materialize.js"></script>
+    <script src="controller/inicio/inicioSesion.js"></script>
+</html>

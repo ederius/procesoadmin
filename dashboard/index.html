@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es" ng-app="procesoAdmin">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>..:: Centro Happy Kids ::..</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link href="../view/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="../view/css/style_panel.css"  rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="row">
+
+    <nav class="top-nav green accent-4">
+        <div class="nav-wrapper center">
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+                <i class=" medium mdi-navigation-menu"></i>
+            </a>
+            <a href="#" class="brand-logo hide-on-large-only"></a>
+            <a class="brand-logo center center-align hide-on-med-and-down"><img src="../view/imagenes/logo.gif" width="131" height="64" alt="Escudo" class="center-block center-align">
+            </a>
+        </div>
+    </nav>
+
+</div>
+
+<div class="row">
+    <div class="col s2 ">
+
+        <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;  overflow: scroll;">
+
+            <li class='dropdown-button btn botominterno green accent-4' href='#' data-activates='dropdown1'><i class=" medium mdi-action-account-circle"></i> ADMINISTRADOR</li>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Editar Perfil</a></li>
+                <li class="divider"></li>
+                <li><a href="#/">Cerrar Sesión</a></li>
+            </ul>
+
+
+
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion ">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal">
+                    <i class="material-icons">dashboard</i>Pines de inscripción</a>
+                        <div class="collapsible-body teal lighten-5" style="">
+                            <ul>
+                                <li><a href="#/generar-pin">Pines generados</a></li>
+                                <li><a href="#/generar-pin">Generar pín</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-teal"><i class=" small mdi-action-accessibility"></i>Aspirantes inscritos</a>
+                        <div class="collapsible-body teal lighten-5" style="">
+                            <ul>
+                                <li><a href="#/">Ver Inscritos</a></li>
+                                <li><a href="#/"></a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+        </ul>
+
+    </div>
+
+
+    <div class="col s12 m12 l9 offset-l3  contenido">
+
+        <div class="row">
+            <div class="col s12 area"  >
+
+      <div  ng-view >
+                            
+
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+<div class="row divFooter">
+    <footer class="page-footer green accent-4 col l10 offset-l2 m12 s12">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Centro de enseñanza y estimulación happy kids</h5>
+                    <p class="grey-text text-lighten-4">Aplicativo creado con el fin de facilitar el manejo de la información y el proceso de inscripción de estudiantes</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mas Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#/GeneraciónPin">Generación de pín</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#/InfoInscripción">Información inscritos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#/Aspirantes">Aspirantes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="logout.php">Cerrar Sesión</a></li>
+                        <ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Riohacha - La Guajira</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+
+
+</body>
+
+    <script src="../view/js/jquery-1.8.2.min.js"></script>
+    <script src="../view/js/angular/angular.min.js"></script>
+    <script src="../view/js/angular/angular-route.min.js"></script>
+    <script src="../view/js/scriptAngular.js"></script>
+    <script src="../view/js/materialize.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+            $(".button-collapse").sideNav();
+            $(".dropdown-button").dropdown();
+            $('ul.tabs').tabs();
+            $('.collapsible').collapsible({});
+
+        });
+        
+    </script>
+
+
+</html>
