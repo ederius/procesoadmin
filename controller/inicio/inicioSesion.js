@@ -23,7 +23,7 @@
                     var dataString = 'usuario='+usuario+'&contra='+contra;
                     $.ajax({
                         type: "POST",
-                        url: "model/inicio/inicioSesion.php",
+                        url: "../model/inicio/inicioSesion.php",
                         data: dataString,
                         success: function(data) {
                             switch (data) {
